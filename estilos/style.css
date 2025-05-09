@@ -67,15 +67,39 @@
 
  form > div.campo {
    background-color: #5f2c82;
+   border: 2px solid #5f2c82;
    width: 100%;
    display: block;
-   height: 40px;
-   border-radius: 5px;
+   height: 30px;
+   border-radius: 8px;
    margin: 5px 0px;
  }
 
+div.campo > input:focus-within {
+   background-color: white;
+}
+
  div.campo > label {
    display: none;
+ }
+
+ div.campo > span {
+   color: white;
+   font-size: 2em;
+   width: 40px;
+   padding: 1px;
+ }
+
+ div.campo > input {
+   background-color: #63d8d4;
+   width: calc(100% - 45px);
+   transform: translateY(-13px);
+   font-size: 1em;
+   height: 100%;
+   margin-top: 13px;
+   border: 0px;
+   border-radius: 8px;
+   padding: 5px;
  }
 
  form > input[type=submit] {
@@ -87,6 +111,7 @@
    color: white;
    border: none;
    border-radius: 5px;
+   cursor: pointer;
  }
 
  form > input[type=submit]:hover {
